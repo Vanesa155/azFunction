@@ -189,3 +189,5 @@ Debe ir con el nombre `name_function`, porque es el nombre que le dimos en el ar
 Ahora, nos metemos a Azure para ver la función creada, como lo vemos en la siguiente imagen:
 
 **Función en Azure**
+
+![image](https://github.com/user-attachments/assets/2180e12a-3517-4b16-ba2e-0972c9baba8a)
