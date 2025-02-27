@@ -1,7 +1,7 @@
 # Definición del provider que ocuparemos
 provider "azurerm" {
   features {}
-  subscription_id = "83e88fbe-e51b-4bde-9d73-f2224a5515c8"
+  subscription_id = ""
 }
 
 # Se crea el grupo de recursos, al cual se asociarán los demás recursos
