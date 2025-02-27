@@ -206,7 +206,7 @@ variable "name_function" {
 
 y como vemos ya no nos pide poner el nombre de function.
 
-![image](https://github.com/user-attachments/assets/2180e12a-3517-4b16-ba2e-0972c9baba8a)
+![image](/img/nofunctionc.png)
 
 
 Finalmente, aplico la configuración para desplegar la infraestructura:
