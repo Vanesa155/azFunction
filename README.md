@@ -169,23 +169,62 @@ provider "azurerm" {
 
 > ⚠️ **Nota:** No pongas tu ID en línea porque te la pueden robar. 😃
 
+###  Configurar Terraform  
+inicializo el entorno con:  
+
+```bash
+terraform init
+```
+verifico que la sintaxis y configuración sean correctas:
+
+```bash
+terraform validate
+```
+Para asegurar que el código siga un estilo consistente y ordenado, ejecuto:
+
+```bash
+terraform fmt
+```
+Para obtener una vista previa de los recursos que se crearán, utilizo:
+
+```bash
+terraform plan
+```
 Ahora, al correr esto nos pide ingresar la variable `name_function` por consola, como lo vemos en la siguiente imagen:
 
-**Antes de tfvars**
+![image](https://github.com/user-attachments/assets/4a41814c-09d9-4caf-b458-50d3e0135525)
+
 
 Para evitar esto, podemos editar el archivo `variables.tf`, dándole un valor por defecto a la variable, de la siguiente manera:
 
 ```terraform
 variable "name_function" {
   type    = string
-  default = "roufunction"
+  default = "glorifunction"
 }
 ```
 
-Debe ir con el nombre `name_function`, porque es el nombre que le dimos en el archivo `main.tf`.
+y como vemos ya no nos pide poner el nombre de function.
 
-**Después de tfvars**
+![image](https://github.com/user-attachments/assets/2180e12a-3517-4b16-ba2e-0972c9baba8a)
+
+
+Finalmente, aplico la configuración para desplegar la infraestructura:
+
+```bash
+terraform apply
+```
 
 Ahora, nos metemos a Azure para ver la función creada, como lo vemos en la siguiente imagen:
 
 **Función en Azure**
+
+![image](/img/glorifunction.png)
+
+![image](/img/net.png)
+
+## <b> Autora </b>
+
++ [Gloria Vanesa](https://github.com/Vanesa155 "Vanesa V.")
+
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
